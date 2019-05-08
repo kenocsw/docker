@@ -1,7 +1,7 @@
 FROM php:7-apache
 
 RUN apt-get update
-RUN apt-get install php7.0-dev php-pear
+RUN apt-get install php-pear
 RUN pear channel-discover pear.nrk.io
 RUN pear install nrk/Predis
 
